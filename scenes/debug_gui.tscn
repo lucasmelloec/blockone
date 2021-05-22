@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/scripts/debug_gui.gd" type="Script" id=1]
+
+[node name="DebugGui" type="Control"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="FpsLabel" type="Label" parent="VBoxContainer"]
+margin_right = 100.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.772549, 0.113725, 0.113725, 1 )
+text = "FPS: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MemoryLabel" type="Label" parent="VBoxContainer"]
+margin_top = 18.0
+margin_right = 100.0
+margin_bottom = 32.0
+custom_colors/font_color = Color( 0.772549, 0.113725, 0.113725, 1 )
+text = "Static Memory: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ObjectLabel" type="Label" parent="VBoxContainer"]
+margin_top = 36.0
+margin_right = 100.0
+margin_bottom = 50.0
+custom_colors/font_color = Color( 0.772549, 0.113725, 0.113725, 1 )
+text = "Object Count: "
+
+[node name="RenderObjectsLabel" type="Label" parent="VBoxContainer"]
+margin_top = 36.0
+margin_right = 100.0
+margin_bottom = 50.0
+custom_colors/font_color = Color( 0.772549, 0.113725, 0.113725, 1 )
+text = "Render Objects: "
+
+[node name="RenderVerticesLabel" type="Label" parent="VBoxContainer"]
+margin_top = 36.0
+margin_right = 100.0
+margin_bottom = 50.0
+custom_colors/font_color = Color( 0.772549, 0.113725, 0.113725, 1 )
+text = "Render Vertices: "
+
+[node name="DrawCallsLabel" type="Label" parent="VBoxContainer"]
+margin_top = 36.0
+margin_right = 100.0
+margin_bottom = 50.0
+custom_colors/font_color = Color( 0.772549, 0.113725, 0.113725, 1 )
+text = "Draw Calls: "
+
+[node name="VideoMemoryLabel" type="Label" parent="VBoxContainer"]
+margin_top = 36.0
+margin_right = 100.0
+margin_bottom = 50.0
+custom_colors/font_color = Color( 0.772549, 0.113725, 0.113725, 1 )
+text = "Video Memory: "
