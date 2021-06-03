@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/scripts/player/player_manager.gd" type="Script" id=1]
+[ext_resource path="res://scenes/player/remote_player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=3]
+
+[node name="PlayerManager" type="Node"]
+script = ExtResource( 1 )
+remote_player = ExtResource( 2 )
+player = ExtResource( 3 )
