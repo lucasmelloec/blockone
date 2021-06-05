@@ -36,7 +36,7 @@ func _physics_process(delta):
     _process_input()
     _process_movement(delta)
     if get_tree().get_network_peer():
-        rpc('move', translation, rotation)
+        rpc_unreliable_id(1, 'server_move', transform)
 
 
 func _unhandled_input(event):

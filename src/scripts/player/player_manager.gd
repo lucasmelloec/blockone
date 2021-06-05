@@ -36,12 +36,12 @@ remote func client_spawn_player(player_id: int):
 		new_player = remote_player.instance()
 
 	new_player.name = str(player_id)
-	get_parent().add_child(new_player, true)
+	add_child(new_player, true)
 
 remote func client_spawn_multiple_players(players_ids: PoolIntArray):
 	for player_id in players_ids:
 		client_spawn_player(player_id)
 
 remote func client_despawn_player(player_id: int):
-	if get_parent().has_node(str(player_id)):
-		get_parent().get_node(str(player_id)).queue_free()
+	if has_node(str(player_id)):
+		get_node(str(player_id)).queue_free()
