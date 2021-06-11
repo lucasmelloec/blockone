@@ -1,6 +1,8 @@
 extends Resource
 
 
+const CHUNK_SIZE := Vector3(16, 16, 16)
+
 const BLOCK_VERTS := [
     Vector3(-0.5, 0.5, 0.5),
     Vector3(0.5, 0.5, 0.5),
