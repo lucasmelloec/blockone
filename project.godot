@@ -19,6 +19,10 @@ config/singleplayer=true
 
 Log="*res://src/scripts/autoload/log.gd"
 
+[display]
+
+window/vsync/use_vsync=false
+
 [input]
 
 move_forward={
